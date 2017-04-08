@@ -12,7 +12,8 @@ menu:
   main:
     parent: "Templates"
     weight: 10
-weight: 10	#rem
+weight: 10
+sections_weight: 10
 draft: false
 aliases: [/templates/introduction/,/layouts/introduction/,/layout/introduction/, /templates/go-templates/]
 toc: true
@@ -247,6 +248,7 @@ The following accesses the page parameter called "disqus_url" and escapes the HT
 {{ if or (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr") }}
 Stuff Here
 {{ end }}
+```
 
 Could be rewritten as
 

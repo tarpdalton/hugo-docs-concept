@@ -12,7 +12,8 @@ menu:
   main:
     parent: "Variables"
     weight: 20
-weight: 20	#rem
+weight: 20
+sections_weight: 20
 aliases: [/variables/page/]
 toc: true
 ---
@@ -50,7 +51,7 @@ See [`.Scratch`](/functions/scratch/) for page-scoped, writable variables.
 : see [Hugo Variables](/variables/hugo/).
 
 `.IsHome`
-: `true` in the context of the [home page](/templates/homepage/).
+: `true` in the context of the [homepage](/templates/homepage/).
 
 `.IsNode`
 : always `false` for regular content pages.

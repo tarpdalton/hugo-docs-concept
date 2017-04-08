@@ -4,7 +4,7 @@ linktitle: Formats
 description: Markdown is natively supported in Hugo and is parsed by the feature-rich and incredibly speed Blackfriday parse. Hugo also provides support for additional syntaxes (eg, Asciidoc) via external helpers.
 date: 2017-01-10
 publishdate: 2017-01-10
-lastmod: 2017-04-02
+lastmod: 2017-04-06
 categories: [content management]
 tags: [markdown,asciidoc,mmark,content format]
 menu:
@@ -80,7 +80,7 @@ For a full list of emojis, see the [Emoji cheat sheet][emojis].
 
 ### Shortcodes
 
-If you write in markdown and find yourself frequently embedding your content with raw HTML, Hugo provides built-in shortcode functionality to act as the intermediary between your content and templating. This is one of the most powerful features in Hugo in that is allows you to extend markdown arbitrarily and quickly.
+If you write in Markdown and find yourself frequently embedding your content with raw HTML, Hugo provides built-in shortcodes functionality to act as the intermediary between your content and templating. This is one of the most powerful features in Hugo and allows you to essentially create your own Markdown extensions very quickly.
 
 See [Shortcodes][sc] for usage, particularly for the built-in shortcodes that ship with Hugo, and [Shortcode Templating][sct] to learn how to build your own.
 
@@ -138,7 +138,7 @@ MathJax is a stable open-source library with many features. I encourage the inte
 {{% note %}}
 The following issues with Markdown assume you are using `.md` for content and BlackFriday for parsing. Using [Mmark](#mmark) as your content format will obviate the need for the following workarounds.
 
-When using Mmark with MathJax, use `displayMath: [['$$','$$'], ['\\[','\\]']]`. See the [Mmark `README.md`](https://github.com/miekg/mmark/wiki/Syntax#math-blocks) for more information. In addition to MathJax, Mmark has been shown to work well with [KaTex](https://github.com/Khan/KaTeX). See this [related blog post from a Hugo user](http://nosubstance.me/post/a-great-toolset-for-static-blogging/).
+When using Mmark with MathJax, use `displayMath: [['$$','$$'], ['\\[','\\]']]`. See the [Mmark `README.md`](https://github.com/miekg/mmark/wiki/Syntax#math-blocks) for more information. In addition to MathJax, Mmark has been shown to work well with [KaTeX](https://github.com/Khan/KaTeX). See this [related blog post from a Hugo user](http://nosubstance.me/post/a-great-toolset-for-static-blogging/).
 {{% /note %}}
 
 After enabling MathJax, any math entered between proper markers (see the [MathJax documentation][mathjaxdocs]) will be processed and typeset in the web page. One issue that comes up, however, with Markdown is that the underscore character (`_`) is interpreted by Markdown as a way to wrap text in `emph` blocks while LaTeX (MathJax) interprets the underscore as a way to create a subscript. This "double speak" of the underscore can result in some unexpected and unwanted behavior.
@@ -210,7 +210,7 @@ For example, for Asciidoc files, Hugo will try to call the `asciidoctor` or `asc
 To use these formats, just use the standard extension and the front matter exactly as you would do with natively supported `.md` files.
 
 {{% warning "Performance of External Helpers" %}}
-Because additional formats are external commands---with the exception of org mode---generation performance will rely heavily on the performance of the external tool you are using. As this feature is still in its infancy, feedback is welcome.
+Because additional formats are external commands---with the exception of Org-mode---generation performance will rely heavily on the performance of the external tool you are using. As this feature is still in its infancy, feedback is welcome.
 {{% /warning %}}
 
 ## Learn Markdown

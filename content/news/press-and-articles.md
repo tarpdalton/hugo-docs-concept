@@ -11,7 +11,8 @@ menu:
   main:
     parent: "News"
     weight: 30
-weight: 30	#rem
+weight: 30
+sections_weight: 30
 draft: false
 aliases: [/community/press/]
 toc: false
@@ -24,5 +25,5 @@ Know of a post, article, or tutorial on Hugo? [Please add it to this list](https
 
 Hugo has been featured in the following Blog Posts, Press, and Media.
 
-{{< datatable >}}
+{{< articlelist >}}
 
