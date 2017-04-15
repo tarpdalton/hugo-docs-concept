@@ -46,9 +46,9 @@ The following examples take you stepwise through creating a new type layout for 
 {{% code file="content/events/my-first-event.md" copy="false" %}}
 ```toml
 +++
-title: My First Event
+title = My First Event
 date = "2016-06-24T19:20:04-07:00"
-description = "Today is my 36th birthday. My how time flies."
+description = "Today is my 36th birthday. How time flies."
 type = "event"
 layout = "birthday"
 +++
