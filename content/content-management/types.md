@@ -46,16 +46,16 @@ The following examples take you stepwise through creating a new type layout for 
 {{% code file="content/events/my-first-event.md" copy="false" %}}
 ```toml
 +++
-title: My First Event
+title = My First Event
 date = "2016-06-24T19:20:04-07:00"
-description = "Today is my 36th birthday. My how time flies."
+description = "Today is my 36th birthday. How time flies."
 type = "event"
 layout = "birthday"
 +++
 ```
 {{% /code %}}
 
-By default, Hugo assumes `*.md` under `events` is of the `events` content type. However, we have specified that this particular file at `content/events/ my-first-event.md` is of type `special` and should render using the `birthday` layout.
+By default, Hugo assumes `*.md` under `events` is of the `events` content type. However, we have specified that this particular file at `content/events/ my-first-event.md` is of type `event` and should render using the `birthday` layout.
 
 ### Create a Type Layout Directory
 

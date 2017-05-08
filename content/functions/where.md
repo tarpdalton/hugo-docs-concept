@@ -5,9 +5,9 @@ description: Filters an array to only the elements containing a matching value f
 godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
+lastmod: 2017-04-30
 categories: [functions]
-tags: [filtering]
+tags: [filtering,logic,operators]
 ns:
 signature: ["where COLLECTION KEY [OPERATOR] MATCH"]
 workson: [lists,taxonomies,terms,groups]
@@ -101,7 +101,7 @@ You can also put the returned value of the `where` clauses into a variable:
 
 ## Using `where` with `first`
 
-The following grabs the first five content files in `post` using the [default ordering](/templates/lists/) for lists (i.e., `weight => date`):
+The following ranges through the first five content files in the `post` section using the [default ordering](/templates/lists/) for lists (i.e., `weight => date`):
 
 {{% code file="where-with-first.html" %}}
 ```html
@@ -113,7 +113,7 @@ The following grabs the first five content files in `post` using the [default or
 
 ## Nesting `where` Clauses
 
-You can also nest `where` clauses to drill down on lists of content by more than one parameter. The following first grabs all pages in the "blog" section and then ranges through the result of the first `where` clause and finds all pages that are *not* featured:
+You can also nest `where` clauses to drill down on lists of content by more than one parameter. The following example first grabs all pages in the `blog` section and then ranges through only those pages that are *not* featured:
 
 ```html
 {{ range where (where .Data.Pages "Section" "blog" ) ".Params.featured" "!=" "true" }}
